@@ -37,7 +37,7 @@ makeCacheMatrix <- function(x) {
 
 
 ## Calculate the inverse of the matrix if cash value is not available 
-## else calculate and assign to cash
+## else return the cash value
 cacheSolve <- function(x, ...) {
   # Get the cashed value from the makeCacheMatrix
   cache <- x$getInverse()
